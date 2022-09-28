@@ -5,9 +5,9 @@ Estudiantes que realizan el proyecto: Martínez Mejía Marc Antony &amp; Medelli
 
 ### Planteamiento de la problemática
 > En el contexto de la nutrición en general uno de los principales problemas que se aborda es la obesidad, no obstante, también se debe hacer mencionar de los problemas derivados de una nutrición inadecuada, tales como:
-> •	Desnutrición, que incluye emaciación (peso inferior al normal para la altura), retraso del crecimiento (peso inferior al normal para la edad) y peso inferior al normal (peso inferior al normal para la edad).
-> •	Deficiencias de micronutrientes (deficiencias de vitaminas o minerales esenciales) o malnutrición de micronutrientes, incluido el exceso de micronutrientes.
-> •	Sobrepeso, obesidad y enfermedades no transmisibles relacionadas con la dieta (como enfermedades cardíacas, diabetes y algunos tipos de cáncer).
+> -	Desnutrición, que incluye emaciación (peso inferior al normal para la altura), retraso del crecimiento (peso inferior al normal para la edad) y peso inferior al normal (peso inferior al normal para la edad).
+> -	Deficiencias de micronutrientes (deficiencias de vitaminas o minerales esenciales) o malnutrición de micronutrientes, incluido el exceso de micronutrientes.
+> -	Sobrepeso, obesidad y enfermedades no transmisibles relacionadas con la dieta (como enfermedades cardíacas, diabetes y algunos tipos de cáncer).
 > La decadente formación de la personas en ámbitos alimenticios y nutricionales abre un panorama para soluciones relacionadas a la difusión de información en pro de una alimentación adecuada para todas las personas, debido a que la alimentación saludable es un derecho de todas las personas, no obstante existen ciertos sectores de la población que lo ignoran como la industria laboral y educativa que en ocasiones cuentan con horarios establecidos que no permiten a las personas contar con una buena alimentación.
 
 ### Posible solución
