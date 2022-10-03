@@ -3,6 +3,9 @@ Estudiantes que realizan el proyecto: Martínez Mejía Marc Antony &amp; Medelli
 
 ===================
 
+Enlace al talbero de Trello donde se encuentra toda la documentación:
+> https://trello.com/b/rBufpaV6/nuddles
+
 ### Planteamiento de la problemática
 > En el contexto de la nutrición en general uno de los principales problemas que se aborda es la obesidad, no obstante, también se debe hacer mencionar de los problemas derivados de una nutrición inadecuada, tales como:
 > -	Desnutrición, que incluye emaciación (peso inferior al normal para la altura), retraso del crecimiento (peso inferior al normal para la edad) y peso inferior al normal (peso inferior al normal para la edad).
