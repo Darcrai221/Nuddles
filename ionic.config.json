@@ -1,0 +1,7 @@
+{
+  "name": "Nuudles",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
