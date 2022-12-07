@@ -1,0 +1,27 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h2>Login</h2>
+    <p>Lets get started</p>
+  </div>
+
+  <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+    <ion-input placeholder="Email" class="primary-input" type="text" formControlName="email"></ion-input>
+    <ion-input placeholder="Password" type="password" class="primary-input" formControlName="password"></ion-input>
+    
+    <div class="ion-margin-top ion-text-right forget">
+      <a [routerLink]="['/forgot-password']" class="small-text" style="color: #fac564;">Forgot Password?</a>
+    </div>
+    <div class="ion-margin-top">
+      <ion-button type="submit" color="danger" expand="block">SIGN IN</ion-button>
+    </div>
+  </form>
+
+  <ion-button class="btn btn-info small-text" expand="block" (click)="onClick()" color="white">SIGN IN WITH GOOGLE</ion-button>
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()" style="color: white;">Close</a>
+  </div>
+</ion-content>

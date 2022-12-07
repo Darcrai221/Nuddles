@@ -1,7 +1,11 @@
 {
   "name": "Nuudles",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "id": "1db7eab4"
 }

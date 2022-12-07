@@ -1,0 +1,135 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']" style="color: white;"> Volver </ion-button>
+    </ion-buttons>
+    <ion-title>Nutrition</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!-- Recipes -->
+    <ion-item expand="block" (click)="setOpenRecipes(true)">
+      <ion-label>Healthy recipes
+        <ion-modal [isOpen]="isModalOpenRecipes">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Recipes</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="dismiss()" [routerLink]="['/nutrition']" style="color: white;">Cerrar
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>Recipe playlist</p>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/xNXcOU8lM2s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+    </ion-item>
+
+
+    <!-- IMC -->
+    <ion-item expand="block" (click)="setOpenIMC(true)">
+      <ion-label>IMC Calculator
+        <ion-modal [isOpen]="isModalOpenIMC">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>IMC Calculator</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="dismiss()" [routerLink]="['/nutrition']" style="color: white;">Cerrar
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <!-- Contenido IMC inicio -->
+            <ion-content class="ion-padding">
+              <div>
+                <h6 class="card-subtitle mb-2 text-muted">Enter your information</h6>
+                <p>Weight (kg)</p>
+                <ion-input placeholder="Weight" class="primary-input" type="number" [(ngModel)]="weight"></ion-input>
+                <p>Height (cm)</p>
+                <ion-input placeholder="Height" class="primary-input" type="number" [(ngModel)]="height"></ion-input>
+                <ion-button class="btn btn-info small-text" expand="block" (click)="calcBMI()" color="white">Calculate
+                  IMC</ion-button>
+              </div>
+              <br>
+              <div *ngIf="bmi" style="background-color: #1e2023; border-radius: 15px;">
+                <ion-card-header>
+                  <ion-card-title *ngIf="bmi">Your IMC {{bmi.toFixed(2)}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content *ngIf="bmi">
+                  {{imcMessage}}
+                </ion-card-content>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous">
+                </script>
+            </ion-content>
+            <!-- Contenido IMC fin-->
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+    </ion-item>
+    <!-- IMC end -->
+
+    <!-- Calories -->
+    <ion-item expand="block" (click)="setOpenCalories(true)">
+      <ion-label>Calories Calculator  -  Testing
+        <ion-modal [isOpen]="isModalOpenCalories">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Calories Calculator</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="dismiss()" [routerLink]="['/nutrition']" style="color: white;">Cerrar
+                  </ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <!-- Contenido Calories inicio -->
+            <ion-content class="ion-padding">
+              <div>
+                <h6 class="card-subtitle mb-2 text-muted">Enter your information</h6>
+                <p>Sex</p>
+                <ion-select placeholder="Sex" interface="action-sheet" type="number" [(ngModel)]="sex">
+                  <ion-select-option value="1">Male</ion-select-option>
+                  <ion-select-option value="2">Female</ion-select-option>
+                </ion-select>
+                <p>Weight (kg)</p>
+                <ion-input placeholder="Weight" class="primary-input" type="number" [(ngModel)]="weightCal"></ion-input>
+                <p>Height (cm)</p>
+                <ion-input placeholder="Height" class="primary-input" type="number" [(ngModel)]="heightCal"></ion-input>
+                <p>Age</p>
+                <ion-input placeholder="Age" class="primary-input" type="number" [(ngModel)]="age"></ion-input>
+                <ion-button class="btn btn-info small-text" expand="block" (click)="calcCalorieBMI()" color="white">Calculate Calories</ion-button>
+              </div>
+              <br>
+              <div *ngIf="bmiCal" style="background-color: #1e2023; border-radius: 15px;">
+                <ion-card-header>
+                  <ion-card-title *ngIf="bmiCal">Total calories {{bmiCal.toFixed(2)}} calories</ion-card-title>
+                </ion-card-header>
+                <ion-card-content *ngIf="bmiCal">
+                  For the values you have entered, it is recommended to consume this amount of calories.
+                </ion-card-content>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+            </ion-content>
+            <!-- Contenido Calories fin-->
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+    </ion-item>
+    <!-- Calories end -->
+  </ion-list>
+</ion-content>

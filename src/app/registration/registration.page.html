@@ -1,0 +1,24 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h2>Sign Up</h2>
+    <p>Register</p>
+  </div>
+
+  <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+    <ion-input placeholder="Email" class="primary-input" type="text" formControlName="email"></ion-input>
+    <ion-input placeholder="Password" type="password" class="primary-input" formControlName="password"></ion-input>
+
+    <div class="ion-margin-top">
+      <ion-button type="submit" color="danger" expand="block">SIGN UP</ion-button>
+    </div>
+  </form>
+
+  <ion-button class="btn btn-info small-text" expand="block" (click)="onClick()" color="white">SIGN UP WITH GOOGLE</ion-button>
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()" style="color: white;">Close</a>
+  </div>
+</ion-content>

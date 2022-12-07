@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Nuudles",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
